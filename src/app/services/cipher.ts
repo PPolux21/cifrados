@@ -49,6 +49,7 @@ export class Cipher {
     return texto.split('').map(char => {
       const code = char.charCodeAt(0);
 
+      // Índice de Código #7.5
       if (code >= 65 && code <= 90) {
         return String.fromCharCode(90 - (code - 65));
       }

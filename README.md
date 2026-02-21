@@ -1,59 +1,15 @@
 # Cifrados
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.
+Programa web de cifrado Cesar y Atbash
 
-## Development server
+## Anexos: Índices de Código del Proyecto
 
-To start a local development server, run:
+A continuación se listan los archivos referenciados en la documentación:
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* [Índice de Código #1.X (`app.html`)](./src/app/app.html)
+* [Índice de Código #2.X (`caesar.html`)](./src/app/components/caesar/caesar.html)
+* [Índice de Código #3.X (`atbash.html`)](./src/app/components/atbash/atbash.html) 
+* [Índice de Código #4.X (`app.ts`)](./src/app/app.ts)
+* [Índice de Código #5.X (`caesar.ts`)](./src/app/components/caesar/caesar.ts)
+* [Índice de Código #6.X (`atbash.ts`)](./src/app/components/atbash/atbash.ts)
+* [Índice de Código #7.X (`cipher.ts`)](./src/app/services/cipher.ts)

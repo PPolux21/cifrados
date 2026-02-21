@@ -11,9 +11,9 @@ import { Atbash } from './components/atbash/atbash';
 })
 export class App {
   protected readonly title = signal('cifrados');
-  
+  // Índice de Código #4.1
   modoActivo: 'caesar' | 'atbash' = 'caesar';
-
+  // Índice de Código #4.2
   cambiarModo(modo: 'caesar' | 'atbash') {
     this.modoActivo = modo;
   }

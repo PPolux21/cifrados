@@ -6,6 +6,7 @@
     <div class="row g-3">
       <div class="col-md-9">
         <label class="form-label text-primary fw-bold">Texto de entrada</label>
+        <!-- Índice de Código #2.1  -->
         <textarea 
           class="form-control bg-dark text-light border-secondary" 
           rows="3" 
@@ -14,6 +15,7 @@
       </div>
       <div class="col-md-3">
         <label class="form-label text-primary fw-bold">Desplazamiento</label>
+        <!-- Índice de Código #2.2  -->
         <input 
           type="number" 
           class="form-control form-control-lg bg-dark text-light border-secondary" 
@@ -24,6 +26,7 @@
     
     <div class="d-flex justify-content-between align-items-center mb-2">
       <label class="form-label fw-bold text-success mb-0">Resultado Cifrado/Descifrado</label>
+      <!-- Índice de Código #2.3  -->
       <button 
         class="btn btn-sm" 
         [ngClass]="copiado ? 'btn-success' : 'btn-outline-primary'" 
@@ -32,7 +35,7 @@
         {{ copiado ? '¡Copiado!' : 'Copiar Resultado' }}
       </button>
     </div>
-
+    <!-- Índice de Código #2.4  -->
     <div 
       class="p-3 bg-dark border border-secondary rounded text-break text-light fs-5" 
       style="min-height: 80px;" 

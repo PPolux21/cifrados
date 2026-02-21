@@ -14,11 +14,11 @@ export class Atbash {
   
   textoOriginal: string = '';
   copiado: boolean = false;
-
+  // Índice de Código #6.1
   get textoCifrado(): string {
     return this.cipherService.cifrarAtbash(this.textoOriginal).trimEnd();
   }
-
+  // Índice de Código #6.2
   async copiarAlPortapapeles() {
     if (!this.textoCifrado) return;
     try {

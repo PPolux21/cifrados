@@ -11,21 +11,20 @@ import { Cipher } from '../../services/cipher';
 })
 export class Caesar {
   private cipherService = inject(Cipher);
-  
+
   textoOriginal: string = '';
   desplazamiento: number = 3;
   copiado: boolean = false;
-
+  // Índice de Código #5.1
   get textoCifrado(): string {
     return this.cipherService.cifrarCesar(this.textoOriginal, this.desplazamiento).trimEnd();
   }
-
+  // Índice de Código #5.2
   async copiarAlPortapapeles() {
     if (!this.textoCifrado) return;
     try {
       await navigator.clipboard.writeText(this.textoCifrado);
       this.copiado = true;
-      // Regresar el botón a su estado original después de 2 segundos
       setTimeout(() => this.copiado = false, 2000);
     } catch (err) {
       console.error('Error al copiar al portapapeles: ', err);

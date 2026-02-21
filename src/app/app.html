@@ -1,0 +1,42 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      
+      <div class="text-center mb-5">
+        <h1 class="display-4 fw-bolder text-primary">Terminal de Cifrado</h1>
+        <p class="text-secondary fs-5">Algoritmos segmentados con soporte para caracteres especiales</p>
+      </div>
+
+      <ul class="nav nav-pills justify-content-center mb-4">
+        <li class="nav-item mx-2">
+          <button 
+            class="nav-link fw-bold" 
+            [class.active]="modoActivo === 'caesar'"
+            [class.text-light]="modoActivo !== 'caesar'"
+            (click)="cambiarModo('caesar')">
+            César
+          </button>
+        </li>
+        <li class="nav-item mx-2">
+          <button 
+            class="nav-link fw-bold" 
+            [class.active]="modoActivo === 'atbash'"
+            [class.text-light]="modoActivo !== 'atbash'"
+            (click)="cambiarModo('atbash')">
+            Atbash
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content mt-4">
+        @if (modoActivo === 'caesar') {
+          <app-caesar></app-caesar>
+        }
+        @if (modoActivo === 'atbash') {
+          <app-atbash></app-atbash>
+        }
+      </div>
+
+    </div>
+  </div>
+</div>
